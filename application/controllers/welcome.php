@@ -40,7 +40,7 @@ class Welcome extends CI_Controller {
 
         } else {
             $data['login_url'] = $this->facebook->getLoginUrl(array(
-                'redirect_uri' => site_url('welcome/login'), 
+                'redirect_uri' => site_url('welcome'), 
                 'scope' => array("email") // permissions here
             ));
         }
